@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "hdrscope"
+version = "1.0.0"
+description = "Zero-dependency HTTP security-header auditor — fetch a page, grade its headers A+ to F, get exact fixes"
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+keywords = ["security", "http", "headers", "audit", "blue-team", "devsecops", "csp", "hsts"]
+classifiers = [
+    "Topic :: Security",
+    "Environment :: Console",
+    "Programming Language :: Python :: 3",
+]
+
+[project.scripts]
+hdrscope = "hdrscope.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]

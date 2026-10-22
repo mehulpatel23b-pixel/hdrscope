@@ -1,0 +1,2 @@
+# hdrscope needs nothing.
+# The entire tool runs on the Python standard library.
